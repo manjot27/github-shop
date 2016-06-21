@@ -1,0 +1,46 @@
+
+
+<div class="row product_top">
+    
+    <div class="container-fluid">
+	
+
+    <div class="col-xs-12 col-sm-6 center-block">
+    
+       
+     <div class="product_description">
+
+        <h3><%= @product.name %></h3>
+        <h4><%#=@product.material %></h4>
+        <p><%= @product.description %></p>
+        <p><%= @product.designer.designer_name %></p>
+
+        <p><%= @product.stock_quantity %> </p>
+     </div>
+      	<div class="col-xs-12">
+       	 <p class="price"> <%= number_to_currency @product.price %></p>
+    	</div>
+    	<div class="row add_to_cart">	
+        	<p><%= link_to 'Add to cart', add_cart_path, method: :post %></p>
+        </div>
+  
+   
+    </div>
+
+      
+   <div class="col-xs-12 col-sm-6 center-block" >
+    
+  <%= image_tag @product.image, height: "500", class: "img-responsive"  %>
+
+  
+
+  </div>
+
+
+
+  </div>  
+  <p>
+	<%= link_to 'Edit', edit_product_path(@product) %> |
+	<%= link_to 'Back', products_path %>
+</p>
+</div>

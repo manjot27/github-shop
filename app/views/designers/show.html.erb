@@ -1,0 +1,14 @@
+<header id="necklace_header">
+<h1>
+  <%= @designer.designer_name %>
+</h1>
+</header>
+
+
+
+<%= render "designers/table", products: @products %>
+
+
+
+<%= link_to 'Edit', edit_designer_path(@designer) %> |
+<%= link_to 'Back', designers_path %>
