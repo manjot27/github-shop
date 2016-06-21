@@ -80,4 +80,9 @@ Rails.application.configure do
   config.serve_static_files = true
   config.assets.compile = true
 
+
+  Braintree::Configuration.environment = :sandbox
+  Braintree::Configuration.merchant_id = "bjh7nhj6gckb2zfp"
+  Braintree::Configuration.public_key = "cc78kh6nytn8whs2"
+  Braintree::Configuration.private_key = "c092702f0383c0ce05d37fe04dbcabf3"
 end
