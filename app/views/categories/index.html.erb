@@ -1,8 +1,11 @@
+<div class="container">
+<div class="admin-wrapper">
+
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Categories</h1>
+<h3>Listing Categories</h3>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Name</th>
@@ -24,4 +27,9 @@
 
 <br>
 
-<%= link_to 'New Category', new_category_path %>
+<% if current_user && current_user.admin? %>
+  <%= link_to 'New Category', new_category_path, class: 'admin-buttons'%>
+<% end %>
+
+</div>
+</div>

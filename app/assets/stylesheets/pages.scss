@@ -73,24 +73,24 @@ background-color: transparent;
     height: auto ; /* ? */
     background-repeat:no-repeat;
     background-position: top center;
-    background-size: cover;  
+    background-size: cover;
     background-position: center top; 
     height: 720px 
 }
 
 #about_head {
-    background: url('about/about11.png') ;
+    background: url('about/about12.png') ;
     width: 110%;
     height: auto ; /* ? */
     background-repeat:no-repeat;
     background-position: top center;
     background-size: cover;  
     background-position: center top; 
-    height: 620px 
+    height: 780px 
 }
 
 #down_head_about {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 40px;
     background: url('about/about7.png') ;
       height: auto ; /* ? */
@@ -99,6 +99,20 @@ background-color: transparent;
     background-size: cover;  
     background-position: center top; 
     height: 500px;
+    width: 120%;
+
+}
+
+#bottom-head-about{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: url('about/about3.png') ;
+      height: auto ; /* ? */
+    background-repeat:no-repeat;
+    background-position: top center;
+    background-size: cover;  
+    background-position: center top; 
+    height: 350px;
     width: 120%;
 
 }
@@ -208,9 +222,14 @@ background-color: transparent;
 
 
 
-.img-wrapp{
-	padding: 10px;
+.img-responsive {
+    margin: 0 auto;
 }
+
+.img-wrapp{
+    margin-bottom: 10px;
+}
+
 
 .full_front_img{
     margin: 40px 0px;

@@ -42,7 +42,7 @@ class DesignersController < ApplicationController
   # PATCH/PUT /categories/1.json
   def update
     respond_to do |format|
-      if @designer.update(category_params)
+      if @designer.update(designer_params)
         format.html { redirect_to @designer, notice: 'Designer was successfully updated.' }
         format.json { render :show, status: :ok, location: @designer }
       else

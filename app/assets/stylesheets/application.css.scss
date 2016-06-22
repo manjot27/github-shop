@@ -40,6 +40,24 @@ body{
 
 }
 
+.admin-buttons{
+
+
+}
+
+
+.admin-wrapper{
+    margin-top: 10%;
+    margin-bottom: 500px;
+}
+
+.admin-wrapper h3{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+
+
 #site-notification {
     position: fixed;
     bottom: 0px;
@@ -148,7 +166,7 @@ header {
     height: auto ; /* ? */
     background-repeat:no-repeat;
     background-position: top center;
-    background-size: cover;  
+    background-size: contain;  
     background-position: center top; 
     height: 720px 
 }
