@@ -1,0 +1,19 @@
+
+
+<li class="dropdown full-width ">
+  <div>
+
+    <%= form_tag search_products_path, method: 'get', class: 'navbar-form' do %>
+      <%= text_field_tag :query, params[:query], placeholder: "Search", class: "form-control"%>
+   
+    
+  <%#= button_tag(type: 'submit', class: "search-button") do %>
+ <!--<i class="glyphicon glyphicon-search"></i> -->
+<%# end %>
+   
+    
+    <% end %>
+
+
+  </div>
+  </li>

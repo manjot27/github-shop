@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'products/search' => 'products#search', as: 'search_products'
+
   get 'pages/index'
 
   get 'pages/about'
@@ -7,11 +9,13 @@ Rails.application.routes.draw do
 
   get 'pages/stockists'
 
+
   devise_for :users
   resources :categories
   resources :categories
   resources :designers
   resources :category_names
+
   resources :products
 
 
@@ -26,6 +30,8 @@ Rails.application.routes.draw do
       post :pay
     end
   end
+  
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
