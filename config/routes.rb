@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'emaillist/subscribe' => 'emaillist#subscribe'
+
   get 'products/search' => 'products#search', as: 'search_products'
 
   get 'pages/index'
