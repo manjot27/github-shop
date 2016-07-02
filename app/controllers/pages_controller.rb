@@ -11,6 +11,10 @@ class PagesController < ApplicationController
   end
 
   def stockists
+
+  end
+
+  def help
   end
 
 end

@@ -46,7 +46,9 @@ body{
 }
 
 .search-button{
-    float: left;
+    font-size: 1.5em;
+    color: #666;
+    margin-top: 10px;
 }
 .admin-wrapper{
     margin-top: 10%;
@@ -120,11 +122,15 @@ p {
 	font-size: .9em;
 	padding-left: 20px;
 }
+
+
+
 li a{
 	text-transform: uppercase;
 	font-size: .9em;
     letter-spacing: .2em;
     text-decoration: none;
+    list-style: none;
 
 
 }
@@ -132,6 +138,7 @@ li a{
 li a :hover{
 	text-transform: uppercase;
 	color: #eaeaea;
+
 }
 
 figcaption a{
@@ -145,6 +152,8 @@ figcaption>a:hover{
   color: #555;
 
 }
+
+/* #### NAV BAR ######### */
 
 .dropdown-menu>li>a{
 	font-weight: 300;
@@ -295,11 +304,33 @@ background-color: transparent;
     vertical-align: text-bottom;
 }
 
+/* SEARCH BAR */
+
+
+.searchbar{
+    margin-right: 150px
+}
+input.transparent-input { 
+    border:none !important
+}
+
+.transparent-input {
+   background-color: rgba(0, 0, 0, 0);
+   border:none;
+}
+
+ input.transparent-input{
+       background-color:rgba(0,0,0,0) !important;
+       border:none !important;
+    }
+
+
 
 /* IMAGE CAPTION THUMBMAILS */
 
    
  .caption {
+    margin-left: 1.3em;
         width:100%;
         bottom: .3rem;
         position: absolute;
@@ -332,8 +363,13 @@ background-color: transparent;
    
 }
 
+/*    POSTLIST     */
 
+.postlist-text{
+    cursor: pointer;
+}
 
+/*   FOOTER  */
 
 #footer{
     padding: 40px 0px;

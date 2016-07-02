@@ -88,12 +88,12 @@
                     <ul class="dropdown-menu" role="menu">
                         <li><%= link_to "About", pages_about_path %></li>
                         
-                        <li><%= link_to "Stockists", pages_stockists_path %></li> 
+                        <li><%= link_to "Stockists", stockists_path %></li> 
                     
                         <li class="divider"></li>
                         <li><a href="#">Location</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Help</a></li>
+                        <li><%= link_to "Help", pages_help_path %></li> 
                     </ul>
                 </li>          
             <% if current_user && current_user.admin? %>
@@ -107,9 +107,7 @@
                         <li><%= link_to "Products", products_path %></li>
                         <li><%= link_to "Categories", categories_path %></li>
                         <li><%= link_to "Designers", designers_path %></li>
-
-                        <li><a href="#">Stockists
-                            </a></li>
+                        <li><%= link_to "Stockists", stockists_path %></li>
                        
                     </ul>
 
@@ -119,21 +117,26 @@
                
             <% end %>
 
-                 <%= render 'cart' %> 
-               
-                  <%= render 'search' %> 
-
-                <li class="dropdown full-width navbar-right">
-
                 <% if user_signed_in? %>
+               
+                <li class="dropdown full-width">
                    <p class="navbar-link"> Logged in as <%= current_user.name %>.</p>
-                    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+                   </li>
+                   <li>
+                    <%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>    
                 <% else %>
+                <li class="dropdown full-width">
+
                     <%= link_to "Login", new_user_session_path, class: "navbar-link" %>
                 <% end %>        
                     
                     
-                </li>                                 
+                </li>     
+
+                <%= render 'cart' %>    
+
+                <%= render 'search' %> 
+                        
             </ul>
         </div>
        </div> 

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stockists
   post 'emaillist/subscribe' => 'emaillist#subscribe'
 
   get 'products/search' => 'products#search', as: 'search_products'
@@ -9,7 +10,7 @@ Rails.application.routes.draw do
 
   get 'pages/location'
 
-  get 'pages/stockists'
+  get 'pages/help'
 
 
   devise_for :users

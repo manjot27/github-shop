@@ -47,6 +47,8 @@ group :development do
 
 end
 
+
+gem 'gretel'
 gem 'social-share-button'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'

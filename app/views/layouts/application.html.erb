@@ -14,6 +14,7 @@
 
 	<%= content_tag :div, notice, class: "bg-success" %>
 	<%= content_tag :div, alert, class: "bg-danger" %>
+	<%= breadcrumbs pretext: "You are here: ", display_single_fragment: true, style: :bootstrap, separator: '', link_current: true %>
 	<%= yield %>
 
 
