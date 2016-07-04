@@ -1,15 +1,14 @@
 <% if @cart %>
 
- <li class="dropdown full-width ">
-     <a href="#" class="dropdown-toggle" 
-                    data-toggle="dropdown">
+ <li class="dropdown full-width navbar-right">
+     
              <% if @cart.empty? %>
                         Cart 0
                  <% else %>
 
                  <%= link_to "Cart #{pluralize @cart.count, "item"}", cart_path %>
              <% end %>
-     </a>
+     
                     
  </li>
 

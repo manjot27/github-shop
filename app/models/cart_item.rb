@@ -17,4 +17,6 @@ attr_reader :product_id, :quantity
   def total_price
     product.price * quantity
   end
+
+    
 end

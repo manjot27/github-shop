@@ -1,8 +1,9 @@
-<h1>Checkout</h1>
 
-<h2>You are checking out the following products:</h2>
+<div class="container">
+<div class="row product_top">
+ <h2>You are checking out the following products:</h2>
 
-<ul>
+  <ul>
 	<% @cart.items.each do |item| %>
 		<li>
 			<%= item.quantity %>
@@ -12,7 +13,7 @@
 
 	<% end %>
 
-</ul>
+  </ul>
 
 <p>Total price: <%= number_to_currency @cart.total_price %></p>
 
@@ -40,13 +41,16 @@
 
 		</div>
 
-		
+	
+</div>
+
+</div>	
 
 		<form id="checkout" method="post" action="/checkout">
   			<div id="payment-form"></div>
   		<p><%= f.submit "Place order", class: "btn btn-primary"%></p>
 		</form>
-		
+
 		<script >
 		var clientToken = "<%=@client_token %>";
 
@@ -56,3 +60,4 @@ braintree.setup(clientToken, "dropin", {
 	</script>	
 	<% end %>
 <% end %>
+

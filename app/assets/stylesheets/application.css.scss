@@ -127,7 +127,7 @@ p {
 
 li a{
 	text-transform: uppercase;
-	font-size: .9em;
+	font-size: .8em;
     letter-spacing: .2em;
     text-decoration: none;
     list-style: none;
@@ -267,7 +267,7 @@ border-radius: 0px;
 
 
 .dropdown.full-width {
-width : 120px;
+width : 160px;
 background-image: transparent;
 background-color: transparent;
 }
@@ -308,10 +308,12 @@ background-color: transparent;
 
 
 .searchbar{
-    margin-right: 150px
+    margin-right: 100px;
+    margin-top: -5px;
 }
 input.transparent-input { 
-    border:none !important
+    border:none !important;
+    
 }
 
 .transparent-input {

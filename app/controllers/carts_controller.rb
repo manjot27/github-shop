@@ -16,4 +16,12 @@ class CartsController < ApplicationController
 		@order_form = OrderForm.new user: User.new
 		@client_token = Braintree::ClientToken.generate
 	end
+
+	#Delete
+    def destroy
+	
+     redirect_to cart_path current_cart.id
+   end
+
+
 end

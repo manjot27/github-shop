@@ -55,6 +55,8 @@ class Cart
   def total_price
     @items.inject(0) { |sum, item| sum + item.total_price }
   end
+
+
   	
 
 end
