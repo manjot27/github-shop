@@ -93,10 +93,16 @@
                
             <% end %>
 
-                <% if user_signed_in? %>
+          
+
+                <%= render 'cart'%>    
+
+                <%= render 'search' %> 
+                        
+                              <% if user_signed_in? %>
                
                 <li class="dropdown full-width">
-                   <p class="navbar-link"> Logged in as <%= current_user.name %>.</p>
+                   <!--<p class="navbar-link loggin-style"> Logged in as <%#= current_user.name %>.</p> -->
                    </li>
                    <li>
                     <%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>    
@@ -108,11 +114,6 @@
                     
                     
                 </li>     
-
-                <%= render 'cart'%>    
-
-                <%= render 'search' %> 
-                        
             </ul>
         </div>
        </div> 

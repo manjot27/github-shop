@@ -1,16 +1,20 @@
 
    <footer id="footer" class="footer">
       <div class="row">
-        <div class="col-xs-12 col-md-2">
-        <a href="http://www.facebook.com/YOURUSERNAMEHERE"><i class="fa fa-facebook"></i> </a>
-         <p class="text-muted">Social links</p>
+        <div class="container-fluid">
+
+        <div class="col-xs-12 col-md-3">
+        
+        
          <a href="https://www.instagram.com/hlinreykdalstudio/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
           <a href="https://www.facebook.com/Hl%C3%ADn-Reykdal-208910763506/?fref=ts"> <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+
          <i class="fa fa-envelope" aria-hidden="true"></i>
 
         </div>
-       <div class="pull-right footer-wrap" >
-         <div class="col-xs-12 col-md-2" id="footer_nav">
+       
+         <div class="col-xs-12 col-md-3 pull-right" id="footer_nav">
             <ul>  
                         <h5>Categories</h5>
                          <% @categories.each do |category| %>
@@ -19,7 +23,7 @@
             </ul>
            
             </div>  
-            <div class="col-xs-12 col-md-2" id="footer_nav">
+            <div class="col-xs-12 col-md-3 pull-right" id="footer_nav">
                 <ul>
                       <h5>Designers</h5>
                 
@@ -32,7 +36,7 @@
             </div>          
             
                 
-              <div class="col-xs-12 col-md-2" id="footer_nav">
+              <div class="col-xs-12 col-md-3 pull-right" id="footer_nav">
 
               <h5>Info</h5>
                     <ul>                   
@@ -48,5 +52,6 @@
                     </ul>
              </div>
         </div>
-      </div>
+        </div>
+      
     </footer>
