@@ -18,5 +18,4 @@ attr_reader :product_id, :quantity
     product.price * quantity
   end
 
-    
 end
