@@ -17,11 +17,14 @@ class CartsController < ApplicationController
 		@client_token = Braintree::ClientToken.generate
 	end
 
-	#Delete
-    def destroy
-	
-     redirect_to cart_path current_cart.id
-   end
+	def remove
+  cart = session['cart']
+  item = cart['items'].find { |item| item['product_id'] == params[:id] }
+  if item
+    cart['items'].delete item
+  end
+   redirect_to cart_path
+  end
 
 
 end

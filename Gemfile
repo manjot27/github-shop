@@ -59,7 +59,7 @@ gem 'devise'
 gem 'country_select'
 gem 'braintree'
 gem 'rails_12factor', group: :production
-
+gem 'font-awesome-sass'
 
 gem 'gibbon', :git => 'https://github.com/amro/gibbon.git'
 

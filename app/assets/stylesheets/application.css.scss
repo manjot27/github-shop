@@ -18,6 +18,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "social-share-button";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 *{
     margin: 0;
@@ -379,10 +381,12 @@ input.transparent-input {
 }
 
 #footer_nav > ul{
+
     letter-spacing: .2em;
 }
 
 #footer_nav > ul >li {
+ 
     text-transform: none;
     text-decoration: none;
     list-style: none;
@@ -397,5 +401,9 @@ input.transparent-input {
     margin: 5px 0px;
     
 
+}
+
+.footer-wrap{
+   margin: 0 50 0 50;
 }
 
