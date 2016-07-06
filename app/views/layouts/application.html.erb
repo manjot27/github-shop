@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://js.braintreegateway.com/js/braintree-2.24.1.min.js"></script>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -14,8 +15,16 @@
 
 	<%= content_tag :div, notice, class: "bg-success" %>
 	<%= content_tag :div, alert, class: "bg-danger" %>
-	<%#= breadcrumbs pretext: "You are here: ", display_single_fragment: true, style: :bootstrap, separator: '', link_current: true %>
+
+	
+				<%= render 'login' %>
+			
 	<%= yield %>
+		
+
+
+	<%#= breadcrumbs pretext: "You are here: ", display_single_fragment: true, style: :bootstrap, separator: '', link_current: true %>
+
 
 
 <%= render 'notifications' %>
