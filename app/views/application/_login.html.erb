@@ -5,7 +5,7 @@
 		<div id="site-canvas">
 
       		<div id="site-menu">
-      			<button class="close-canvas"></button>
+      			<span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'><button class="close-canvas"></button></span>
 			<%= form_for(:user, :url => session_path(:user)) do |f| %>
 
 			  <div class="form-group red">
@@ -31,11 +31,3 @@
 
 
  	
-<script>
-$(document).ready(function(){
-    $("#site-menu").click(function(){
-        $("#site-menu").hide();
-    });
-        
-});
-</script>
