@@ -81,14 +81,15 @@ background-color: transparent;
 } 
 
 #index_header {
-    background: url('bud_front.jpg');
-    width: 100%;
-    height: auto ; /* ? */
+    background: url('front_bud_full_1200_500.jpg');
+    min-height: 500px;
+    max-width: 100%;
     background-repeat:no-repeat;
-    background-position: top center;
+    
     background-size: cover;
     background-position: center top; 
-    height: 720px 
+  
+   
 }
 
 #about_head {
@@ -246,7 +247,7 @@ background-color: transparent;
 
 .full_front_img{
     margin: 40px 0px;
-     background: url('../image/front.jpg') ;
+     background: url('../image/front_img_1200_500.jpg') ;
     width: 100%;
    height: auto ; /* ? */
     background-repeat:no-repeat;

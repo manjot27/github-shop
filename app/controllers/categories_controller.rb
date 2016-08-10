@@ -11,6 +11,9 @@ class CategoriesController < ApplicationController
   # GET /categories/1.json
   def show
      @products = @category.products
+     @images  = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
+     @random_no = rand(5)
+     @random_image = @images[@random_no]
   end
 
   # GET /categories/new
