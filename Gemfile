@@ -47,7 +47,7 @@ group :development do
 
 end
 
-
+ruby '2.3.4'
 gem 'gretel'
 gem 'social-share-button'
 gem 'bootstrap-sass'
